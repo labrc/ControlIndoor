@@ -1,5 +1,4 @@
-Monitor climatico y controlador de cultivo para Indoors basado en ESP8266
-
+Monitor climatico y controlador de cultivo para Indoors basado en ESP32
 Modulos:
 
 Fuente 5V 1A
