@@ -3,7 +3,7 @@ Monitor climatico y controlador de cultivo para Indoors basado en ESP32
 Indoor grow controller and montior device based on ESP32
 
 
-Features:
+Features:<br>
    -Controls temps and humidity automatically.
    -Web based GUI, storeable config and monitors.
    -Connect lights, wind fans and extractor vents.
