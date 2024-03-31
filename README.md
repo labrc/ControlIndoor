@@ -1,5 +1,8 @@
 Monitor climatico y controlador de cultivo para Indoors basado en ESP32
-Modulos:
+
+Indoo grow controller and montior device based on ESP32
+
+Modules:
 
 Fuente 5V 1A
 
@@ -9,4 +12,4 @@ D3231
 
 DHT22
 
-editar el archivo principal (control_v09.8.ino) con usuario y contraseña de Wifii
+editar el archivo principal (control_v09.8.ino) con usuario y contraseña de Wifi
