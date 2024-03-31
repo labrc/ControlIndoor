@@ -384,7 +384,7 @@ const char config2_html[] PROGMEM = R"rawliteral(
                     aria-hidden="true"
                   />
                 </button>
-               <p><span id="hora">%HORA%</span>:<span id="minuto">%MINUTO%</span></p> 
+               <p><span id="hora">4</span>:<span id="minuto">20</span></p> 
               </li>
             </ul>
           </div>
@@ -422,7 +422,7 @@ const char config2_html[] PROGMEM = R"rawliteral(
                   >
                     Invertir ciclo.
                   </p>
-                   %botonInvert%
+                   --
                 </div>
               </div>
                              <!-- Card ciclo -->
@@ -439,9 +439,9 @@ const char config2_html[] PROGMEM = R"rawliteral(
                   </svg>
                 </div>
                 <div>
-                  <p  class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400" > &nbsp; Offset de ciclo Solar</p>  <span id="textSliderSol" class="text-lg font-semibold text-gray-700 dark:text-gray-200" style="text-align:right" >%OFFSET% Hrs</span>
+                  <p  class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400" > &nbsp; Offset de ciclo Solar</p>  <span id="textSliderSol" class="text-lg font-semibold text-gray-700 dark:text-gray-200" style="text-align:right" >-3 Hrs</span>
   &emsp;</p><p style="text-align: center">
-  <input type="range" onchange="updateSliderSol(this)" id="SolSlider" min="-11" max="11" value="%OFFSET%" step="1"class="sliderer"></p>
+  <input type="range" onchange="updateSliderSol(this)" id="SolSlider" min="-11" max="11" value=-3 step="1"class="sliderer"></p>
                 </div>
               </div>
                <!-- Card ciclo -->
@@ -458,9 +458,9 @@ const char config2_html[] PROGMEM = R"rawliteral(
                   </svg>
                 </div>
                 <div>
-                  <p  class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400" > &nbsp; Ciclo solar</p>  <span id="textSliderValue" class="text-lg font-semibold text-gray-700 dark:text-gray-200" style="text-align:right" >%SLIDERVALUE% Hrs</span>
+                  <p  class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400" > &nbsp; Ciclo solar</p>  <span id="textSliderValue" class="text-lg font-semibold text-gray-700 dark:text-gray-200" style="text-align:right" >12 Hrs</span>
   &emsp;</p><p style="text-align: center">
-  <input type="range" onchange="updateSliderPWM(this)" id="pwmSlider" min="10" max="20" value="%SLIDERVALUE%" step="1"class="sliderer"></p>
+  <input type="range" onchange="updateSliderPWM(this)" id="pwmSlider" min="10" max="20" value="12" step="1"class="sliderer"></p>
                 </div>
               </div>
              
@@ -470,8 +470,8 @@ const char config2_html[] PROGMEM = R"rawliteral(
               <div
                 class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-3 dark:text-gray-400 dark:bg-gray-800"
               >
-               Horario actual de las plantas %H%   <br> 
-               Horario de Sistema %HORA%
+               Horario actual de las plantas 16  <br> 
+               Horario de Sistema 4
               
               <button onclick="GUARDAR()" class="px-5 py-3 font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                  GUARDAR CONFIG
@@ -484,9 +484,9 @@ const char config2_html[] PROGMEM = R"rawliteral(
                 <div
                 class="grid px-4 py-3 text-xs font-semibold tracking-wide text-gray-500 uppercase border-t dark:border-gray-700 bg-gray-50 sm:grid-cols-3 dark:text-gray-400 dark:bg-gray-800"
               >
-               Horario de encendido %prendeluces%  <br> 
-               Horario de apagado %apagaluces%<br> <br> 
-              %UPTIME% 
+               Horario de encendido 15  <br> 
+               Horario de apagado 3<br> <br> 
+              0
               
                             
               </div>
